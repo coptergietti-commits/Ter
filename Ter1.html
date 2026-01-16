@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday My Love 💖</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  color: #c9184a;
+  font-size: 38px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #6a040f;
+}
+
+.card {
+  background: white;
+  border-radius: 25px;
+  width: 300px;
+  margin: 25px auto;
+  padding: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.message {
+  background: rgba(255,255,255,0.85);
+  padding: 10px;
+  border-radius: 20px;
+  width: 85%;
+  margin: auto;
+  font-size: 18px;
+}
+
+button {
+  margin-top: 25px;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e03160;
+}
+
+.hidden {
+  display: none;
+}
+
+#surprise {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #9d0208;
+}
+
+/* หัวใจลอย */
+.heart {
+  position: fixed;
+  bottom: -10px;
+  font-size: 24px;
+  animation: float 5s linear forwards;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<audio id="music" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_9c1b71c4b4.mp3">
+</audio>
+
+<div class="container">
+  <h1>🎉 Happy Birthday  🎂</h1>
+  <p class="subtitle">เว็บนี้ทำมาเพื่อเธอคนเดียว 💕</p>
+
+  <div class="card">
+    <!-- เปลี่ยนรูปตรงนี้ -->
+   <img src="  " alt="">
+    <h2>คนพิเศษของเค้า 💖</h2>
+  </div>
+
+  <div class="message">
+    <p>
+      <h4>ขอบคุณที่เข้ามาเป็นรอยยิ้ม  
+      เป็นความสุข และเป็นทุกอย่างของเค้า  
+      อยู่ด้วยกันไปนาน ๆ  🥰</h4>
+    </p>
+  </div>
+
+  <button onclick="startSurprise()">🎁 กดดูเซอร์ไพรส์</button>
+
+  <div id="surprise" class="hidden">
+    <h2><a href="https://www.youtube.com/watch?v=OYPiXBIgvJ8&list=RDOYPiXBIgvJ8&start_radio=1">💌</a> เค้าจะรักเธอเพิ่มขึ้นทุกเดือน</2h>  
+    <p id="counter"></p>
+  </div>
+</div>
+
+<script>
+let days = 0;
+let started = false;
+
+function startSurprise() {
+  if (started) return;
+  started = true;
+
+  document.getElementById("surprise").style.display = "block";
+  document.getElementById("music").play();
+
+  setInterval(() => {
+    days++;
+    document.getElementById("counter").innerText = 
+      "รักเธอมาแล้ว  " + days + " เดือน และจะรักตลอดไป 💕  "
+    createHeart();
+  }, 1000);
+  
+}
+
+ 
+
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerText = "💖   💖"; 
+  heart.innerText = "💖   💖"; 
+  heart.style.left = Math.random() * 100 + "vw";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<style>
+/* ===== ส่วนคำอวยพร ===== */
+.wish-box  {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.wish-box h2 {
+    font-size: 36px;
+    color: #ff4d88;
+    margin-bottom: 20px;
+}
+
+.wish-text {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    min-height: 100px;
+}
+
+/* ปุ่ม */
+.wish-btn {
+    background: linear-gradient(135deg, #ff4d88, #ff85a2);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wish-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255,77,136,0.4);
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== กล่องคำอวยพร ===== -->
+<div class="wish-box">
+    <h2>🎂 คำอวยพรจากใจ 💖</h2>
+    <div id="wishText" class="wish-text">
+       <h4>กดปุ่มด้านล่างเพื่อรับคำอวยพรพิเศษ 💕</h4> 
+    </div>
+    <button class="wish-btn" onclick="randomWish()">กดรับคำอวยพร 💝</button>
+</div>
+
+<script>
+const wishes = [
+    "สุขสันต์วันเกิดนะครับอีหมู🐷ขอให้แฟนมีแต่ความสุข รอยยิ้ม และเสียงหัวเราะในทุกๆวัน",
+    "ขอให้ปีนี้เป็นปีที่ดีที่สุดของแฟน 🎉สมหวังในทุกสิ่งที่ตั้งใจไว้",
+    "ขอบคุณที่เข้ามาเป็นความสุขในชีวิตเค้า 💕 อยู่ด้วยกันไปนานๆนะ",
+    "ขอให้แฟนสุขภาพแข็งแรง 💪ไม่เจ็บไม่ป่วย และมีความสุขมากๆ",
+    "รักแฟนมากที่สุดในโลกเลยนะ 💖ไม่ว่าจะวันไหน เค้าจะอยู่ข้างๆเสมอ",
+    "วันเกิดปีนี้ ขอให้มีแต่เรื่องดีๆ เข้ามาในชีวิต 🎁✨",
+    "ขอให้แฟนเพิ่มความอ้วนได้ด้วนนะสิ่งดีๆ และมีรอยยิ้มตลอดทั้งปี 😊"
+];
+
+function randomWish() {
+    const random = Math.floor(Math.random() * wishes.length);
+    document.getElementById("wishText").innerHTML = wishes[random];
+}
+</script>
+
+</script>
+<a href=""><h1>🎂</h1></a>
+</body>
+</html>
+<img src="" alt="">
